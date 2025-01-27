@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des réparations</title>
+    <style>
+        /* Styles globaux */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e; /* Fond gris foncé au lieu du noir pur */
+            color: #f9f9f9; /* Texte clair */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #121212;
+            color: #fdb813;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Styles pour le titre principal */
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2.5rem;
+            color: #fdb813; /* Jaune cinéma */
+        }
+
+        /* Container principal */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Table de réparations */
+        table {
+            width: 100%;
+            margin-top: 40px;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+
+        th {
+            background-color: #fdb813; /* Jaune cinéma */
+            color: #121212;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #2a2a2a;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #353535;
+        }
+
+        /* Hover sur les lignes */
+        tr:hover {
+            background-color: #444;
+        }
+
+        /* Bouton de création de réparation */
+        .create-repair-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #fdb813; /* Jaune cinéma */
+            color: #121212;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .create-repair-button:hover {
+            background-color: #e6a900;
+        }
+
+        /* Bouton de rechargement */
+        .reload-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #fdb813; /* Jaune cinéma */
+            color: #121212;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .reload-button:hover {
+            background-color: #e6a900;
+        }
+
+        /* Notification d'erreur */
+        .alert {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header de la page -->
+<header>
+    <h1>Cinéphoria - Gestion des Réparations</h1>
+</header>
+
+<div class="container">
+    <h1>Liste des réparations</h1>
+
+    <!-- Bouton de création de réparation -->
+    <button id="create-repair-button" class="create-repair-button">Créer une réparation</button>
+
+    <!-- Bouton de rechargement -->
+    <button id="reload-button" class="reload-button">Recharger</button>
+
+    <div id="repairs-list">
+        <!-- Le tableau des réparations sera injecté ici -->
+    </div>
+</div>
+
+<script src="list_repairs.js"></script>
+</body>
+</html>

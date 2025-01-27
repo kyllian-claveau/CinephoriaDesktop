@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer une réparation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #232526, #414345);
+        }
+    </style>
+</head>
+<body class="flex flex-col h-screen">
+<!-- Header -->
+<header class="bg-black bg-opacity-70 p-4 shadow-md flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+        <img src="https://soignemoiproject.online/images/logo.png" alt="Logo" class="w-16 h-16 rounded-full">
+        <h1 class="text-white text-xl font-semibold">Cinéphoria - Réparations</h1>
+    </div>
+    <div class="flex items-center space-x-6">
+        <!-- Bouton Recharger -->
+        <button class="bg-yellow-500 text-black py-2 px-4 rounded-lg hover:bg-yellow-400 transition-colors" onclick="window.location.reload();">
+            Recharger
+        </button>
+        <!-- Bouton Déconnexion -->
+        <button class="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-500 transition-colors" onclick="logout();">
+            Déconnexion
+        </button>
+    </div>
+</header>
+
+<!-- Formulaire de création de réparation -->
+<div class="container mx-auto flex-grow flex justify-center items-center p-8">
+    <div class="bg-black bg-opacity-70 p-8 rounded-lg shadow-lg max-w-lg w-full text-center">
+        <h1 class="text-white text-3xl font-semibold mb-6">Créer une réparation pour une salle</h1>
+
+        <form id="repair-form" class="space-y-6">
+            <!-- Sélection de la salle -->
+            <div class="form-group">
+                <label for="room-select" class="block text-white font-semibold">Sélectionner une salle</label>
+                <select id="room-select" class="w-full p-3 rounded-lg bg-white bg-opacity-10 text-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                    <option value="">Choisir une salle...</option>
+                    <!-- Les options des salles seront ajoutées dynamiquement ici -->
+                </select>
+            </div>
+
+            <!-- Description -->
+            <div class="form-group">
+                <label for="description" class="block text-white font-semibold">Description</label>
+                <textarea id="description" class="w-full p-3 rounded-lg bg-white bg-opacity-10 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500" required></textarea>
+            </div>
+
+            <!-- Statut -->
+            <div class="form-group">
+                <label for="statut" class="block text-white font-semibold">Statut</label>
+                <select id="statut" class="w-full p-3 rounded-lg bg-white bg-opacity-10 text-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                    <option value="En attente">En attente</option>
+                    <option value="En cours">En cours</option>
+                    <option value="Terminé">Terminé</option>
+                </select>
+            </div>
+
+            <!-- Bouton soumettre -->
+            <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#EAB308] to-[#F2D800] rounded-lg text-black font-semibold hover:from-[#F2D800] hover:to-[#EAB308] transition-colors">
+                Créer la réparation
+            </button>
+        </form>
+    </div>
+</div>
+
+<script src="create_repair.js"></script>
+<script>
+    function logout() {
+        // Implémentation de la déconnexion
+        window.location.href = "/logout"; // Redirection vers la page de déconnexion
+    }
+</script>
+</body>
+</html>
