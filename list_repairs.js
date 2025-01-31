@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://soignemoiproject.online/api';
+const API_BASE_URL = 'https://cinephoria.ovh/api';
 
 document.addEventListener('DOMContentLoaded', async () => {
     await loadRepairs();

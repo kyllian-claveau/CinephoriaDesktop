@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://soignemoiproject.online/api';
+const API_BASE_URL = 'https://cinephoria.ovh/api';
 
 document.getElementById('login-form').addEventListener('submit', async (event) => {
     event.preventDefault();

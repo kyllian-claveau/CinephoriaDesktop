@@ -6,11 +6,11 @@
 </head>
 <body>
 
-<h1>🌟 SoigneMoiForSecretary</h1>
+<h1>🌟 CinephoriaForDesktop</h1>
 
 <h2>📝 Description</h2>
 <p>
-    SoigneMoiForSecretary est une application bureautique développée avec Electron. Elle permet aux secrétaires médicales de gérer les séjours des patients, les prescriptions et les avis de manière efficace et intuitive.
+    CinephoriaForDesktop est une application bureautique développée avec Electron. Elle permet aux secrétaires médicales de gérer les séjours des patients, les prescriptions et les avis de manière efficace et intuitive.
 </p>
 
 <h2>🚀 Prérequis</h2>
@@ -20,12 +20,12 @@
 </ul>
 
 <h2>⚙️ Instructions de configuration</h2>
-<p>Suivez ces étapes pour configurer et exécuter SoigneMoiForSecretary.</p>
+<p>Suivez ces étapes pour configurer et exécuter CinephoriaForDesktop.</p>
 
 <h3>🖥️ Installation des dépendances</h3>
 <ol>
     <li>Clonez le dépôt de l'application :
-        <pre><code>git clone https://github.com/kyllian-claveau/SoigneMoiBureautique</code></pre>
+        <pre><code>git clone https://github.com/kyllian-claveau/cinephoria_desktop</code></pre>
     </li>
     <li>Installez les dépendances Node.js :
         <pre><code>npm install</code></pre>
@@ -52,7 +52,7 @@
 
 <hr>
 
-<p>Avec ces instructions, vous devriez être en mesure de configurer et d'exécuter correctement l'application SoigneMoiForSecretary. Bonne chance !</p>
+<p>Avec ces instructions, vous devriez être en mesure de configurer et d'exécuter correctement l'application CinephoriaForDesktop. Bonne chance !</p>
 
 </body>
 </html>

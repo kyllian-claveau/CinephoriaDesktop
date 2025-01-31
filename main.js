@@ -5,7 +5,7 @@ function createWindow() {
     const mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
-		icon: 'https://soignemoiproject.online/images/favicon.ico',
+		icon: 'https://cinephoria.ovh/images/favicon.ico',
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
             nodeIntegration: true,

@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://soignemoiproject.online/api';
+const API_BASE_URL = 'https://cinephoria.ovh/api';
 
 document.addEventListener('DOMContentLoaded', async () => {
     // Charger les salles disponibles à partir de l'API
