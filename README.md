@@ -10,7 +10,7 @@
 
 <h2>📝 Description</h2>
 <p>
-    CinephoriaForDesktop est une application bureautique développée avec Electron. Elle permet aux secrétaires médicales de gérer les séjours des patients, les prescriptions et les avis de manière efficace et intuitive.
+    CinephoriaForDesktop est une application bureautique développée avec Electron. Elle permet aux employés d'un cinéma Cinéphoria de gérer les incidents concernant les salles de cinéma.
 </p>
 
 <h2>🚀 Prérequis</h2>
@@ -25,7 +25,7 @@
 <h3>🖥️ Installation des dépendances</h3>
 <ol>
     <li>Clonez le dépôt de l'application :
-        <pre><code>git clone https://github.com/kyllian-claveau/cinephoria_desktop</code></pre>
+        <pre><code>git clone https://github.com/kyllian-claveau/cinephoriadesktop</code></pre>
     </li>
     <li>Installez les dépendances Node.js :
         <pre><code>npm install</code></pre>
