@@ -28,7 +28,7 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
 
         const payload = JSON.parse(atob(token.split('.')[1]));
 
-        if (payload.roles.includes('ROLE_ADMIN')) {
+        if (payload.roles.includes('ROLE_EMPLOYEE')) {
             document.getElementById('auth-message').innerText = 'Je suis Authentifié';
             window.location.href = 'list_repairs.html';
         } else {
